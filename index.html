@@ -1,0 +1,86 @@
+<!-- index.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CSS Box Model Assignment</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="site-title">Box Model Showcase</h1>
+      <nav class="main-nav">
+        <a href="#home">Home</a>
+        <a href="#features">Features</a>
+        <a href="#cards">Cards</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="home" class="hero">
+      <h2>Understand margin, padding & borders</h2>
+      <p>This page demonstrates how the CSS Box Model affects spacing and sizing. Resize the window to see layout changes.</p>
+      <button class="cta">Try it</button>
+    </section>
+
+    <section id="features" class="features">
+      <article class="feature">
+        <h3>Padding</h3>
+        <p>Padding increases the space inside an element, between its content and its border.</p>
+      </article>
+
+      <article class="feature">
+        <h3>Margin</h3>
+        <p>Margin controls space outside the element and separates it from other elements.</p>
+      </article>
+
+      <article class="feature">
+        <h3>Border</h3>
+        <p>Border is the visible line around an element that adds thickness and style.</p>
+      </article>
+    </section>
+
+    <section id="cards" class="card-grid">
+      <div class="card">
+        <h4>Student</h4>
+        <p class="muted">Age: 21</p>
+        <p class="card-text">This card uses padding to space the inner content and a border to reveal its box.</p>
+        <div class="card-footer">
+          <button class="small">Edit</button>
+          <button class="small secondary">Delete</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <h4>Product</h4>
+        <p class="muted">Quantity: 3</p>
+        <p class="card-text">Cards align using margin. Try adjusting the browser width to see wrapping.</p>
+        <div class="card-footer">
+          <button class="small">Add</button>
+          <button class="small secondary">Remove</button>
+        </div>
+      </div>
+
+      <div class="card highlighted">
+        <h4>Notice</h4>
+        <p class="muted">Important</p>
+        <p class="card-text">This highlighted card shows extra padding and a thicker border.</p>
+        <div class="card-footer">
+          <button class="small">Ok</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; 2025 CSS Box Model Practice</p>
+    </div>
+  </footer>
+</body>
+</html>
+
+
